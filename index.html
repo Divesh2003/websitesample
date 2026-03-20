@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Komal's Homoeopathy Clinic — When Nothing Works, Healing Begins Here</title>
+  <meta name="description"
+    content="Restore your health from the deepest level — mind, body, and genetic patterns. Dr. Komal's Homoeopathy Clinic treats root causes naturally.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="home-page">
+  <!-- CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="grain"></div>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <svg class="cross" viewBox="0 0 80 80">
+      <line class="cross-line" x1="40" y1="10" x2="40" y2="70" />
+      <line class="cross-line" x1="10" y1="40" x2="70" y2="40" />
+    </svg>
+    <div id="preload-text"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/photo_6165736505205263648_y.jpg" alt="Dr. Komal's Homoeopathy Clinic Logo">
+      <span>Dr. Komal's Homoeopathy</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="remedies.html">Remedies</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="section" id="home">
+    <div class="hero-botanical">
+      <svg viewBox="0 0 600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M300 50c0 200-150 300-150 500s150 300 150 300" stroke="#fff" stroke-width=".5" opacity=".4" />
+        <path d="M300 100c80-40 200 60 200 200s-120 200-200 250" stroke="#fff" stroke-width=".5" opacity=".3" />
+        <path d="M300 200c-60-30-180 40-180 160s100 180 180 220" stroke="#fff" stroke-width=".5" opacity=".25" />
+        <circle cx="350" cy="200" r="30" stroke="#fff" stroke-width=".3" opacity=".15" />
+        <circle cx="200" cy="400" r="45" stroke="#fff" stroke-width=".3" opacity=".1" />
+        <circle cx="400" cy="500" r="25" stroke="#fff" stroke-width=".3" opacity=".15" />
+      </svg>
+    </div>
+    <svg class="hero-stitch" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <rect x="1" y="1" width="98" height="98" rx="0" />
+    </svg>
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        Dr. Komal's Homoeopathy Clinic
+      </div>
+      <h1>When nothing works…<br><span class="gold">Healing begins here.</span></h1>
+      <p class="hero-subtitle">Restore your health from the deepest level — mind, body, and genetic patterns.</p>
+      <p>At Dr. Komal's Homeopathic Clinic, we don't just treat disease — we understand your story. Every illness has a
+        root. Every symptom has a meaning. We help your body heal naturally by activating your inner vital force, as
+        envisioned by Samuel Hahnemann.</p>
+      <div class="hero-btns">
+        <button class="btn-gold">Book Consultation</button>
+        <button class="btn-ghost" onclick="window.location.href='about.html'">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT CLINIC -->
+  <section class="about-preview">
+    <div class="img-wrapper reveal">
+      <img src="assets/photo_6165736505205263648_y.jpg" alt="Dr. Komal's Homoeopathy Clinic">
+    </div>
+    <div class="text-block reveal">
+      <span class="section-label">✨ About the Clinic</span>
+      <h2>Healing is not suppression.<br>Healing is <em>transformation.</em></h2>
+      <p>Dr. Komal's Homeopathic Clinic is built on a deep understanding that disease begins within, not outside. Your
+        body already knows how to heal — the right medicine simply guides that process.</p>
+      <p>We focus on your <strong>emotions</strong>, your <strong>experiences</strong>, and your <strong>inherited
+          patterns</strong>. Because true healing happens when everything is understood together.</p>
+      <button class="btn-gold" style="background:transparent; border:1.5px solid var(--gold); color:var(--primary);"
+        onclick="window.location.href='about.html'">Read Full Story</button>
+    </div>
+  </section>
+
+  <!-- OUR HEALING APPROACH -->
+  <section class="approach-section">
+    <div class="section-header reveal">
+      <h2>Our Healing Approach</h2>
+      <div class="line"></div>
+    </div>
+    <div class="approach-grid">
+      <div class="approach-card reveal">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="3" />
+            <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+          </svg>
+        </div>
+        <h3>🔍 We Go Beyond Symptoms</h3>
+        <p>We don't stop at diagnosis. We explore deeper:</p>
+        <ul>
+          <li>Why this illness started</li>
+          <li>Why it continues</li>
+          <li>Why it repeats</li>
+        </ul>
+      </div>
+      <div class="approach-card reveal">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Z" />
+            <path d="M12 6v6l4 2" />
+          </svg>
+        </div>
+        <h3>Mind–Body Connection</h3>
+        <p>Your thoughts, stress, fears, and past experiences deeply affect your health. We carefully understand your:</p>
+        <ul>
+          <li>Emotional patterns</li>
+          <li>Personality</li>
+          <li>Life experiences</li>
+        </ul>
+      </div>
+      <div class="approach-card reveal">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+        </div>
+        <h3>🧬 Genetic & Family Healing</h3>
+        <p>Some diseases are carried through generations. We help with conditions that:</p>
+        <ul>
+          <li>Repeat in families</li>
+          <li>Don't respond to regular treatment</li>
+          <li>Keep coming back again</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Gentle Healing Banner -->
+    <div class="reveal" style="max-width:800px;margin:80px auto 0;text-align:center;">
+      <h3 style="font-size:1.8rem;font-style:italic;color:var(--gold);margin-bottom:20px;font-weight:400;">⚡ Gentle Yet
+        Deep Healing</h3>
+      <div style="display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-top:24px;">
+        <span style="font-size:.9rem;opacity:.65;display:flex;align-items:center;gap:8px;">
+          <span style="color:var(--gold);font-size:1.2rem;">✦</span> No harsh effects</span>
+        <span style="font-size:.9rem;opacity:.65;display:flex;align-items:center;gap:8px;">
+          <span style="color:var(--gold);font-size:1.2rem;">✦</span> Safe for all ages</span>
+        <span style="font-size:.9rem;opacity:.65;display:flex;align-items:center;gap:8px;">
+          <span style="color:var(--gold);font-size:1.2rem;">✦</span> Works deeply & gradually</span>
+        <span style="font-size:.9rem;opacity:.65;display:flex;align-items:center;gap:8px;">
+          <span style="color:var(--gold);font-size:1.2rem;">✦</span> Long-lasting results</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PATIENTS TRUST US -->
+  <section class="trust-section">
+    <div class="section-header reveal">
+      <h2>Why Patients Trust Us</h2>
+      <div class="line"></div>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 21c-4.97-5.71-8-9.29-8-12.5C4 4.36 7.58 2 12 2s8 2.36 8 6.5c0 3.21-3.03 6.79-8 12.5z" />
+          </svg>
+        </div>
+        <p>We listen deeply</p>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 6v6l4 2" />
+          </svg>
+        </div>
+        <p>We treat you as a whole person</p>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+        </div>
+        <p>We focus on long-term healing</p>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M9 12l2 2 4-4" />
+            <circle cx="12" cy="12" r="10" />
+          </svg>
+        </div>
+        <p>We handle complex & unresolved cases</p>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </div>
+        <p>Personal attention at every step</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS PREVIEW -->
+  <section class="section" id="testimonials">
+    <span class="big-quote">"</span>
+    <div class="section-header reveal">
+      <h2>Patient Stories</h2>
+      <div class="line"></div>
+    </div>
+    <div class="testi-carousel">
+      <div class="testi-slide active">
+        <blockquote>"After years of conventional treatments for my eczema with no lasting relief, Dr. Komal's approach
+          transformed my skin — and my confidence — within three months."</blockquote>
+        <span class="patient">Ananya Sharma</span>
+      </div>
+      <div class="testi-slide">
+        <blockquote>"My daughter's recurring throat infections stopped completely after starting homeopathic treatment.
+          Dr. Komal's patience with children is remarkable."</blockquote>
+        <span class="patient">Rajesh Menon</span>
+      </div>
+    </div>
+    <div style="text-align:center; position:relative; z-index:10; margin-top:40px;">
+      <button class="btn-ghost" onclick="window.location.href='testimonials.html'">Read All Reviews</button>
+    </div>
+  </section>
+
+  <!-- POWER MESSAGE -->
+  <section class="power-message">
+    <div class="reveal">
+      <blockquote>
+        "Your disease is not your identity.<br>
+        It is a message from your body.
+        <span class="highlight">When understood correctly, healing becomes natural."</span>
+      </blockquote>
+      <button class="btn-gold">Begin Your Healing Journey</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">Dr. Komal's Homoeopathy</div>
+        <p>Restore your health from the deepest level — mind, body, and genetic patterns. Healing as envisioned by
+          Samuel Hahnemann.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <a href="https://instagram.com/dr.komaal" target="_blank">Instagram</a>
+          <a href="https://wa.me/917588773437" target="_blank">WhatsApp</a>
+          <a href="mailto:komalkhobragade234@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Dr. Komal's Homoeopathy Clinic · Bramhapuri</p>
+    </div>
+  </footer>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <iframe src="https://topmate.io/divesh_mandhyan" frameborder="0"></iframe>
+    </div>
+  </div>
+</body>
+
+</html>
