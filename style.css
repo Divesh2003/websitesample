@@ -165,6 +165,16 @@ body.light-page nav:not(.scrolled) .nav-logo span{color:var(--primary)}
 .service-card.reveal{opacity:0;transform:translateY(40px)}
 .service-card.visible{opacity:1;transform:translateY(0)}
 
+/* ===== CONDITIONS GRID (SERVICES PAGE) ===== */
+.conditions-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;max-width:1200px;margin:0 auto}
+.condition-card{background:var(--white);padding:40px;border-radius:var(--radius);border:1px solid rgba(8,43,39,.06);box-shadow:var(--shadow-sm);transition:transform .4s,box-shadow .4s}
+.condition-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+.condition-card h3{font-size:1.4rem;color:var(--primary);margin-bottom:20px;display:flex;align-items:center;gap:12px;font-style:italic}
+.condition-card h3::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--gold) 0%,transparent 100%)}
+.condition-card ul{list-style:none}
+.condition-card ul li{font-size:0.95rem;line-height:1.8;color:var(--primary);opacity:0.8;padding-left:20px;position:relative;margin-bottom:8px}
+.condition-card ul li::before{content:'•';position:absolute;left:0;color:var(--gold);font-size:1.2rem;line-height:1.4}
+
 /* ===== ABOUT PAGE ===== */
 #about{background:var(--off-white);padding:120px 8%;display:flex;align-items:center;gap:80px;flex-wrap:wrap}
 .about-portrait{flex:1;min-width:300px;display:flex;justify-content:center}
