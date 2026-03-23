@@ -17,7 +17,7 @@
   --radius:12px;
 }
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;color:var(--primary);background:var(--white);overflow-x:hidden;cursor:none}
+body{font-family:'DM Sans',sans-serif;color:var(--primary);background:var(--white);overflow-x:hidden;cursor:none;display:flex;flex-direction:column;min-height:100vh}
 h1,h2,h3,h4{font-family:'Cormorant Garamond',serif}
 ::selection{background:var(--gold);color:var(--primary)}
 
@@ -65,7 +65,7 @@ body.light-page nav:not(.scrolled) .hamburger span{background:var(--primary)}
 body.light-page nav:not(.scrolled) .nav-logo span{color:var(--primary)}
 
 /* ===== SECTIONS ===== */
-.section{min-height:100vh;position:relative;opacity:1;padding:0}
+.section{min-height:100vh;position:relative;opacity:1;padding:0;flex:1}
 .reveal{opacity:0;transform:translateY(40px);transition:all 0.7s cubic-bezier(0.4,0,0.2,1)}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
@@ -268,7 +268,7 @@ body.light-page nav:not(.scrolled) .nav-logo span{color:var(--primary)}
 @keyframes spin{to{transform:rotate(360deg)}}
 
 /* ===== FOOTER ===== */
-footer{background:var(--primary-dark);color:var(--white);padding:60px 8% 40px;position:relative;overflow:hidden}
+footer{background:var(--primary-dark);color:var(--white);padding:60px 8% 40px;position:relative;overflow:hidden;margin-top:auto}
 footer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
 .footer-content{display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:40px;margin-bottom:40px}
 .footer-brand{max-width:320px}
