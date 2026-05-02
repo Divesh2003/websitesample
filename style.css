@@ -1,4 +1,4 @@
-/* ===== RESET & DESIGN TOKENS ===== */
+/* ===== RESET and DESIGN TOKENS ===== */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
   --primary:#002147;
@@ -53,7 +53,7 @@ nav.scrolled{background:rgba(0,33,71,.97);backdrop-filter:blur(16px);box-shadow:
 nav.scrolled .nav-links a{color:rgba(255,255,255,.75)}
 nav.scrolled .nav-links a:hover,nav.scrolled .nav-links a.active{color:var(--gold)}
 .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;transition:all var(--transition)}
-.nav-logo img{height:55px;width:auto;max-width:200px;object-fit:contain;border-radius:0;box-shadow:none}
+.nav-logo img{height:55px;width:auto;max-width:200px;object-fit:contain;border-radius:0;box-shadow:none;filter:sepia(1) saturate(3) brightness(0.7) hue-rotate(10deg)}
 .nav-logo span{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--gold);font-weight:600;letter-spacing:1px}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001}
 .hamburger span{width:24px;height:2px;background:var(--gold);transition:all .3s}
@@ -79,10 +79,10 @@ body.light-page nav:not(.scrolled) .nav-logo span{color:var(--primary)}
 .hero-content .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.25);border-radius:40px;padding:8px 20px;margin-bottom:32px;font-size:.78rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold)}
 .hero-content .hero-badge .pulse-dot{width:8px;height:8px;background:var(--gold);border-radius:50%;animation:pulseDot 2s ease infinite}
 @keyframes pulseDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
-.hero-content h1{font-size:clamp(2.8rem,6vw,5.2rem);color:var(--white);font-style:italic;font-weight:400;line-height:1.08;margin-bottom:16px}
-.hero-content h1 .gold{color:var(--gold);display:block;font-size:clamp(1.4rem,3vw,2.4rem);font-style:normal;font-weight:400;letter-spacing:2px;margin-top:8px}
-.hero-content .hero-subtitle{color:var(--gold-light);font-size:1.1rem;line-height:1.8;max-width:520px;margin-bottom:20px;font-style:italic;font-family:'Cormorant Garamond',serif;font-weight:400}
-.hero-content p{color:rgba(255,255,255,.65);font-size:.95rem;line-height:1.8;max-width:500px;margin-bottom:40px}
+.hero-content h1{font-size:clamp(2.8rem,6vw,5.2rem);color:var(--white);font-style:italic;font-weight:600;line-height:1.08;margin-bottom:16px}
+.hero-content h1 .gold{color:var(--gold);display:block;font-size:clamp(1.4rem,3vw,2.4rem);font-style:normal;font-weight:600;letter-spacing:2px;margin-top:8px}
+.hero-content .hero-subtitle{color:var(--gold-light);font-size:1.15rem;line-height:1.8;max-width:520px;margin-bottom:20px;font-style:italic;font-family:'Cormorant Garamond',serif;font-weight:500}
+.hero-content p{color:rgba(255,255,255,.85);font-size:1rem;line-height:1.8;max-width:500px;margin-bottom:40px;font-weight:500}
 .hero-btns{display:flex;gap:16px;flex-wrap:wrap}
 .hero-stitch{position:absolute;inset:40px;pointer-events:none;z-index:1}
 .hero-stitch rect{fill:none;stroke:var(--gold);stroke-width:1;stroke-dasharray:8 6;stroke-dashoffset:800;opacity:.2;vector-effect:non-scaling-stroke;animation:stitchDraw 3s ease forwards 2.5s}
@@ -114,7 +114,7 @@ body.light-page nav:not(.scrolled) .nav-logo span{color:var(--primary)}
 .approach-section{background:var(--primary);padding:120px 8%;position:relative;color:var(--white);overflow:hidden}
 .approach-section::before{content:'';position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.06) 0%,transparent 70%)}
 .approach-section .section-header{text-align:center;margin-bottom:80px}
-.approach-section .section-header h2{color:var(--white);font-size:clamp(2.4rem,5vw,3.5rem);font-style:italic;font-weight:400}
+.approach-section .section-header h2{color:var(--white);font-size:clamp(2.4rem,5vw,3.5rem);font-style:italic;font-weight:700}
 .approach-section .section-header .line{width:80px;height:2px;background:var(--gold);margin:24px auto}
 .approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;max-width:1100px;margin:0 auto}
 .approach-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:48px 36px;border-radius:var(--radius);transition:all .4s;position:relative;overflow:hidden}
@@ -123,22 +123,22 @@ body.light-page nav:not(.scrolled) .nav-logo span{color:var(--primary)}
 .approach-card:hover{background:rgba(255,255,255,.06);border-color:rgba(212,175,55,.2);transform:translateY(-4px)}
 .approach-card .card-icon{width:56px;height:56px;border-radius:50%;background:rgba(212,175,55,.12);display:flex;align-items:center;justify-content:center;margin-bottom:24px}
 .approach-card .card-icon svg{width:24px;height:24px;stroke:var(--gold);fill:none;stroke-width:1.5}
-.approach-card h3{font-size:1.4rem;font-style:italic;margin-bottom:16px;color:var(--gold-light);font-weight:400}
-.approach-card p{font-size:.9rem;line-height:1.8;opacity:.6}
+.approach-card h3{font-size:1.6rem;font-style:italic;margin-bottom:16px;color:var(--gold);font-weight:700}
+.approach-card p{font-size:1rem;line-height:1.8;opacity:.85;font-weight:500;color:rgba(255,255,255,.9)}
 .approach-card ul{list-style:none;margin-top:12px}
-.approach-card ul li{font-size:.88rem;line-height:2;opacity:.6;padding-left:20px;position:relative}
+.approach-card ul li{font-size:1rem;line-height:2;opacity:.85;padding-left:20px;position:relative;font-weight:500;color:rgba(255,255,255,.9)}
 .approach-card ul li::before{content:'›';position:absolute;left:0;color:var(--gold);font-weight:700}
 
 /* ===== WHY TRUST US (HOME) ===== */
 .trust-section{background:var(--off-white);padding:120px 8%;text-align:center}
-.trust-section .section-header h2{color:var(--primary);font-size:clamp(2.4rem,5vw,3.5rem);font-style:italic;font-weight:400}
+.trust-section .section-header h2{color:var(--primary);font-size:clamp(2.4rem,5vw,3.5rem);font-style:italic;font-weight:700}
 .trust-section .section-header .line{width:80px;height:2px;background:var(--gold);margin:24px auto}
 .trust-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;max-width:1000px;margin:0 auto}
 .trust-item{padding:32px 20px;border-radius:var(--radius);transition:all .3s;position:relative}
 .trust-item:hover{background:white;box-shadow:var(--shadow-sm)}
 .trust-item .trust-icon{width:52px;height:52px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
 .trust-item .trust-icon svg{width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:1.5}
-.trust-item p{font-size:.88rem;line-height:1.6;color:var(--primary);opacity:.8}
+.trust-item p{font-size:1.05rem;line-height:1.6;color:var(--primary);opacity:1;font-weight:700}
 
 /* ===== POWER MESSAGE (HOME) ===== */
 .power-message{background:var(--primary);padding:120px 8%;text-align:center;position:relative;overflow:hidden}
@@ -148,9 +148,9 @@ body.light-page nav:not(.scrolled) .nav-logo span{color:var(--primary)}
 
 /* ===== SECTION HEADER (Global) ===== */
 .section-header{text-align:center;margin-bottom:64px}
-.section-header h2{font-size:clamp(2.4rem,5vw,3.5rem);font-style:italic;font-weight:400;color:var(--primary)}
+.section-header h2{font-size:clamp(2.4rem,5vw,3.5rem);font-style:italic;font-weight:700;color:var(--primary)}
 .section-header .line{width:80px;height:2px;background:var(--gold);margin:24px auto}
-.section-header .section-subtitle{font-size:1rem;line-height:1.8;opacity:.7;max-width:600px;margin:0 auto;color:var(--primary)}
+.section-header .section-subtitle{font-size:1.05rem;line-height:1.8;opacity:.85;max-width:600px;margin:0 auto;color:var(--primary);font-weight:500}
 
 /* ===== SERVICES PAGE ===== */
 #services{padding:120px 8%}
@@ -189,11 +189,11 @@ body.light-page nav:not(.scrolled) .nav-logo span{color:var(--primary)}
 .social-links a:hover{background:var(--primary);color:var(--white);border-color:var(--primary)}
 .social-links a svg{width:16px;height:16px;fill:currentColor}
 .about-text{flex:1;min-width:320px}
-.about-text h2{font-size:clamp(2rem,4vw,3.2rem);font-style:italic;font-weight:400;margin-bottom:8px;color:var(--primary)}
-.about-text .subtitle{color:var(--gold-dark);font-size:.9rem;letter-spacing:1px;margin-bottom:24px}
-.about-text p{line-height:1.8;opacity:.8;margin-bottom:20px;max-width:520px;color:var(--primary)}
+.about-text h2{font-size:clamp(2rem,4vw,3.2rem);font-style:italic;font-weight:700;margin-bottom:8px;color:var(--primary)}
+.about-text .subtitle{color:var(--gold-dark);font-size:1rem;letter-spacing:1px;margin-bottom:24px;font-weight:600}
+.about-text p{line-height:1.8;opacity:.9;margin-bottom:20px;max-width:520px;color:var(--primary);font-weight:500}
 .credentials{list-style:none;margin:24px 0}
-.credentials li{display:flex;align-items:center;gap:12px;margin-bottom:12px;font-size:.95rem;color:var(--primary)}
+.credentials li{display:flex;align-items:center;gap:12px;margin-bottom:12px;font-size:1.05rem;color:var(--primary);font-weight:600}
 .credentials .check{width:24px;height:24px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .credentials .check svg{width:12px;height:12px;stroke:var(--gold);stroke-width:3;fill:none;stroke-dasharray:20;stroke-dashoffset:20}
 .credentials.visible .check svg{animation:drawCheck .5s ease forwards}
@@ -202,8 +202,8 @@ body.light-page nav:not(.scrolled) .nav-logo span{color:var(--primary)}
 .timeline-dot{width:12px;height:12px;border-radius:50%;background:var(--gold);position:absolute;left:-7px;opacity:0;transition:opacity .4s;box-shadow:0 0 0 4px rgba(212,175,55,.2)}
 .timeline-dot.visible{opacity:1}
 .timeline-item{padding:0 0 28px 20px;position:relative}
-.timeline-item .year{font-weight:700;color:var(--gold-dark);font-size:.85rem;letter-spacing:1px}
-.timeline-item .desc{font-size:.9rem;opacity:.7;color:var(--primary)}
+.timeline-item .year{font-weight:700;color:var(--gold-dark);font-size:.95rem;letter-spacing:1px}
+.timeline-item .desc{font-size:1rem;opacity:.85;color:var(--primary);font-weight:500}
 
 /* ===== REMEDIES PAGE ===== */
 #remedies{background:var(--primary);padding:120px 8%;color:var(--white)}
